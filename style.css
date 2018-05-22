@@ -2032,7 +2032,6 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 /* Blog landing, search, archives */
 
 .blog .site-main > article,
-.archive .site-main > article,
 .search .site-main > article {
 	padding-bottom: 2em;
 }
@@ -2122,6 +2121,9 @@ body:not(.twentyseventeen-front-page) .entry-header {
 	color: #222;
 }
 
+.link-more {
+	margin-bottom: 4em;
+}
 /* Entry footer */
 
 .entry-footer {
@@ -3726,10 +3728,10 @@ p > object:only-child {
 		height: calc(100vh - 32px);
 	}
 
-	.panel-content .wrap {
+	/* .panel-content .wrap {
 		padding-bottom: 4.5em;
 		padding-top: 6em;
-	}
+	} */
 
 	.panel-image {
 		height: 100vh;
@@ -3782,9 +3784,9 @@ p > object:only-child {
 
 	/* Posts */
 
-	.site-content {
+	/* .site-content {
 		padding: 5.5em 0 0;
-	}
+	} */
 
 	.single-post .entry-title,
 	.page .entry-title {
@@ -3842,7 +3844,6 @@ p > object:only-child {
 	}
 
 	.blog .site-main > article,
-	.archive .site-main > article,
 	.search .site-main > article {
 		padding-bottom: 4em;
 	}
