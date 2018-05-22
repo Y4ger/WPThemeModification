@@ -3728,10 +3728,10 @@ p > object:only-child {
 		height: calc(100vh - 32px);
 	}
 
-	.panel-content .wrap {
+	/* .panel-content .wrap {
 		padding-bottom: 4.5em;
 		padding-top: 6em;
-	}
+	} */
 
 	.panel-image {
 		height: 100vh;
@@ -3784,9 +3784,9 @@ p > object:only-child {
 
 	/* Posts */
 
-	.site-content {
+	/* .site-content {
 		padding: 5.5em 0 0;
-	}
+	} */
 
 	.single-post .entry-title,
 	.page .entry-title {
