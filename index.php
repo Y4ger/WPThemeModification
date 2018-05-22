@@ -28,7 +28,7 @@ get_header(); ?>
 	</header>
 	<?php endif; ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary-fullwidth" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 			<?php
@@ -47,7 +47,7 @@ get_header(); ?>
 					/*
 					 * The following is to show the header of each recent post on the blog page without
 					 * showing the featured image.
-					 */ 
+					 */
 					if ( 'post' === get_post_type() ) {
 								echo '<header class="entry-header"><div class="entry-meta">';
 								if ( is_single() ) {
