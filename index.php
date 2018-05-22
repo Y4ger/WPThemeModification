@@ -67,6 +67,9 @@ get_header(); ?>
 							the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2></header>' );
 						}
 					the_content();
+				 	if (($wp_query->current_post +1) != ($wp_query->post_count)) {
+  					echo '<hr/>';
+					}
 				endwhile;
 
 				the_posts_pagination( array(
