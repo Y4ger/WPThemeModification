@@ -3442,12 +3442,12 @@ p > object:only-child {
 
 	.site-title {
 		font-size: 36px;
-		font-size: 2.25rem;
+		font-size: 3.5rem;
 	}
 
 	.site-description {
 		font-size: 16px;
-		font-size: 1rem;
+		font-size: 1.5rem;
 	}
 
 	/* Navigation */
