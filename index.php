@@ -19,13 +19,7 @@ get_header(); ?>
 
 <div class="wrap">
 	<?php if ( is_home() && ! is_front_page() ) : ?>
-		<header class="page-header">
-			<h1 class="page-title"><?php single_post_title(); ?></h1>
-		</header>
-	<?php else : ?>
-	<header class="page-header">
-		<h2 class="page-title"><?php _e( 'Posts', 'twentyseventeen' ); ?></h2>
-	</header>
+
 	<?php endif; ?>
 
 	<div id="primary-fullwidth" class="content-area">
@@ -62,7 +56,7 @@ get_header(); ?>
 						if ( is_single() ) {
 							the_title( '<h1 class="entry-title">', '</h1></header>' );
 						} elseif ( is_front_page() && is_home() ) {
-							the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3></header>' );
+							the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1></header>' );
 						} else {
 							the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1></header>' );
 						}
