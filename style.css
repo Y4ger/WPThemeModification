@@ -3354,6 +3354,13 @@ p > object:only-child {
 
 	/* Layout */
 
+		/* Added with js to sidebar */
+	.sticky-sidebar{
+		position: -webkit-sticky; /* Safari */
+	  position: sticky;
+   	top: 125px;
+	}
+
 	.wrap {
 		max-width: 1000px;
 		padding-left: 3em;
@@ -3374,7 +3381,6 @@ p > object:only-child {
 	.has-sidebar #secondary {
 		float: right;
 		padding-top: 0;
-		width: 20%;
 	}
 
 	.error404 #primary {
