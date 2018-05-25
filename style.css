@@ -3360,15 +3360,21 @@ p > object:only-child {
 		padding-right: 3em;
 	}
 
+	#archive {
+		max-width: 100% !important;
+		padding-left: 3em;
+		padding-right: 3em;
+	}
+
 	.has-sidebar:not(.error404) #primary {
 		float: left;
-		width: 58%;
+		width: 75%;
 	}
 
 	.has-sidebar #secondary {
 		float: right;
 		padding-top: 0;
-		width: 36%;
+		width: 20%;
 	}
 
 	.error404 #primary {

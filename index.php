@@ -49,14 +49,14 @@ get_header(); ?>
 					 * showing the featured image.
 					 */
 					if ( 'post' === get_post_type() ) {
-								echo '<header class="entry-header"><div class="entry-meta">';
-								if ( is_single() ) {
-									twentyseventeen_posted_on();
-								} else {
-									echo twentyseventeen_time_link();
-									twentyseventeen_edit_link();
-								};
-							echo '</div><!-- .entry-meta -->';
+							// 	echo '<header class="entry-header"><div class="entry-meta">';
+							// 	if ( is_single() ) {
+							// 		twentyseventeen_posted_on();
+							// 	} else {
+							// 		echo twentyseventeen_time_link();
+							// 		twentyseventeen_edit_link();
+							// 	};
+							// echo '</div><!-- .entry-meta -->';
 						};
 
 						if ( is_single() ) {
@@ -64,7 +64,7 @@ get_header(); ?>
 						} elseif ( is_front_page() && is_home() ) {
 							the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3></header>' );
 						} else {
-							the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2></header>' );
+							the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1></header>' );
 						}
 					the_content();
 				 	if (($wp_query->current_post +1) != ($wp_query->post_count)) {
