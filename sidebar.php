@@ -17,7 +17,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 
 <aside id="secondary" class="widget-area" role="complementary" aria-label="<?php esc_attr_e( 'Blog Sidebar', 'twentyseventeen' ); ?>">
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
-	<h2 class="widget-title">Add A Feature</h2>
+	<h2 class="widget-title">Add Features</h2>
 	<section id="cat_cloud" class="widget widget_tag_cloud">
 		<div class="catcloud">
 			<ul class="cat-selector" role="list">
@@ -39,11 +39,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 
 				foreach ($mycats as $cat) {
 					$name = seoUrl($cat->name);
-					if ($name == get_query_var('category_name')){
-						echo "<li class='category-selector selected' id=$name>$cat->name</li>";
-					} else {
-						echo "<li class='category-selector' id=seoUrl$name>$cat->name</li>";
-					}
+					echo "<li class='category-selector' id=$name>$cat->name</li>";
 				}
 
 				?>

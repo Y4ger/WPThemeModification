@@ -52,4 +52,6 @@ get_header(); ?>
 	</div><!-- #primary -->
 		<?php get_sidebar();?>
 </div><!-- .wrap -->
-<?php get_footer();
+<script type="text/javascript" src="http://localhost:8888/wp-content/themes/twentyseventeen-child/assets/js/custom-solutions.js"></script>
+<script>float_sidebar();toggle_selected();category_pathfinder();</script>
+<?php get_footer();?>
