@@ -1,3 +1,4 @@
+//float sidebar with navbar
 function float_sidebar(){
   // When the user scrolls the page, execute myFunction
 	window.onscroll = function() {myFunction()};
@@ -19,10 +20,13 @@ function float_sidebar(){
 		}
 	}
 }
+//toggle style of selected categories
 function toggle_selected (){
   jQuery(function($) {
+      //get just the path
       var split = window.location.href.split('/');
       var check = split.pop() || split.pop();
+      //if there are already multiple categories find/select them
       if (~check.indexOf("+")){
         split = check.split('+');
         split.forEach(element => {
@@ -34,15 +38,19 @@ function toggle_selected (){
       }
   });
 }
+//redirrect url to selected categories
 function category_pathfinder(){
   jQuery(function($) {
+    //listening to any clicks of the category list
     $('.category-selector').click(function(){
       var split = window.location.href.split('/');
       var check = split.pop() || split.pop();
       var add = $(this).text().replace(/\s+/g, '-').toLowerCase();
+      //if current and only is clicked just reload page
       if (check == add ){
         var url = window.location.href;
-      }else if (~check.indexOf(add)){
+      }//deselect a category
+      else if (~check.indexOf(add)){
         url = window.location.href.replace(add,'');
         if (~url.indexOf("+/")){
           url = url.replace("+/", '');
@@ -51,11 +59,13 @@ function category_pathfinder(){
         }else{
           url = url.replace("/+",'/');
         }
-      }else {
+      }//append the new category onto the URL
+      else {
         var current = window.location.href.slice(0,-1);
         url = current.concat('+', add);
         document.getElementById(add).classList.toggle('selected');
       }
+      //load new url
       window.location.href = url;
     });
   });
