@@ -51,25 +51,4 @@ get_header(); ?>
 	</div><!-- #primary -->
 		<?php get_sidebar(); ?>
 </div><!-- .wrap -->
-<script type="text/javascript">
-	// When the user scrolls the page, execute myFunction
-	window.onscroll = function() {myFunction()};
-
-	// Get the sidebar
-	var sidebar = document.getElementById("secondary");
-	var header = document.getElementById("navigation-top");
-	// Get the offset position of the navbar
-	var sticky = header.offsetTop;
-
-	// Add the sticky class to the sidebar and remove bottom border of nav when you reach its scroll position. Remove "sticky" when you leave the scroll position
-	function myFunction() {
-		if (window.pageYOffset >= sticky) {
-			sidebar.classList.add("sticky-sidebar");
-			header.style.border = "0px black solid";
-		} else {
-			sidebar.classList.remove("sticky-sidebar");
-			header.style.border = "1px solid #eee";
-		}
-	}
-</script>
 <?php get_footer();
