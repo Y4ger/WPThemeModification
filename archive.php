@@ -46,10 +46,12 @@ get_header(); ?>
 
 			get_template_part( 'template-parts/post/content', 'none' );
 
-		endif; ?>
-
+		endif;
+		?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 		<?php get_sidebar();?>
 </div><!-- .wrap -->
-<?php get_footer();
+<script type="text/javascript" src="http://localhost:8888/wp-content/themes/twentyseventeen-child/assets/js/archive-solutions.js"></script>
+<script>float_sidebar();toggle_selected();category_pathfinder();</script>
+<?php get_footer();?>

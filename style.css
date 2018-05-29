@@ -1155,6 +1155,10 @@ td:last-child {
 	padding-right: 0;
 }
 
+li.selected{
+	background-color: #ddd;
+}
+
 /*--------------------------------------------------------------
 10.0 Links
 --------------------------------------------------------------*/
@@ -2543,7 +2547,7 @@ h2.widget-title {
 .widget ol li {
 	border-bottom: 1px solid #ddd;
 	border-top: 1px solid #ddd;
-	padding: 0.5em 0;
+	padding: 0.5em 0 0.5em 0.5em;
 }
 
 .widget:not(.widget_tag_cloud) ul li + li {
@@ -3382,6 +3386,7 @@ p > object:only-child {
 		float: right;
 		padding-top: 0;
 		max-width: 23%;
+		min-width: 23%;
 	}
 
 	.error404 #primary {
