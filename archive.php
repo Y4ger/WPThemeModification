@@ -46,8 +46,8 @@ get_header(); ?>
 
 			get_template_part( 'template-parts/post/content', 'none' );
 
-		endif; ?>
-
+		endif;
+		?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 		<?php get_sidebar();?>
