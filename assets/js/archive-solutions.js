@@ -55,7 +55,7 @@ function category_pathfinder(){
         if (~url.indexOf("+/")){
           url = url.replace("+/", '');
         }else if (~url.indexOf("++")){
-          url = url.replace("++", '');
+          url = url.replace("++", '+');
         }else{
           url = url.replace("/+",'/');
         }

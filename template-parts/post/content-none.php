@@ -26,8 +26,6 @@
 
 			<p><?php _e( 'You created a combination of features no one has before! Click on the "contact" tab at the top to bring your ideas to life! Use the "explore" bar to discover new features if you are still browsing. Otherwise, enjoy mixing and matching all the features we offer!  ', 'twentyseventeen' ); ?></p>
 			<?php
-				get_search_form();
-
 		endif; ?>
 	</div><!-- .page-content -->
 </section><!-- .no-results -->

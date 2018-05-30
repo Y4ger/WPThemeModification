@@ -22,6 +22,13 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 		<div class="catcloud">
 			<ul class="cat-selector" role="list">
 				<?php
+				function is_subcategory ($catid) {
+					$cat_data = get_category($catid);
+					if ( $cat_data->parent )
+						return true;
+					else
+						return false;
+				}
 				function seoUrl($string) {
 			    //Lower case everything
 			    $string = strtolower($string);
@@ -38,14 +45,36 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 				$mycats = get_categories();
 
 				foreach ($mycats as $cat) {
-					$name = seoUrl($cat->name);
-					echo "<li class='category-selector' id=$name>$cat->name</li>";
+					if (! is_subcategory($cat)){
+						$name = seoUrl($cat->name);
+						echo "<li class='category-selector' id=$name>$cat->name</li>";
+					}
 				}
 
 				?>
 			</ul>
 		</div>
 	</section>
+
+	<h2 class="widget-title">Add Specifics</h2>
+	<section id="cat_cloud" class="widget widget_tag_cloud">
+		<div class="catcloud">
+			<ul class="cat-selector" role="list">
+				<?php
+					$thiscat = get_query_var('cat');
+					$mycats = get_categories();
+
+					foreach ($mycats as $cat) {
+						if (is_subcategory($cat)){
+							$name = seoUrl($cat->name);
+							echo "<li class='category-selector' id=$name>$cat->name</li>";
+						}
+					}
+				?>
+			</ul>
+		</div>
+	</section>
+
 
 	<!-- <h2 class="widget-title">Details</h2> -->
 	<?php
