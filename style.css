@@ -2641,6 +2641,9 @@ h2.widget-title {
 	margin-top: -1px;
 }
 
+#contact-button{
+	width:100%;
+}
 /* RSS Widget */
 
 .widget_rss .widget-title .rsswidget:first-child {
@@ -3205,6 +3208,7 @@ p > object:only-child {
 	body.customize-partial-edit-shortcuts-shown .site-header .site-title {
 		padding-left: 0;
 	}
+
 }
 
 @media screen and (min-width: 30em) {
