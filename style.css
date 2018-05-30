@@ -433,7 +433,6 @@ h6 {
 	clear: both;
 	line-height: 1.4;
 	margin: 0 0 0.75em;
-	padding: 1.5em 0 0;
 }
 
 h1:first-child,
@@ -490,7 +489,7 @@ h6 {
 }
 
 p {
-	margin: 0 0 1.5em;
+	margin: 1.5em;
 	padding: 0;
 }
 
@@ -2643,6 +2642,7 @@ h2.widget-title {
 
 #contact-button{
 	width:100%;
+	display: none;
 }
 /* RSS Widget */
 
@@ -3198,6 +3198,11 @@ p > object:only-child {
 	width: auto;
 }
 
+#phonecall{
+	display: visible;
+	width: 100%;
+}
+
 /*--------------------------------------------------------------
 19.0 Media Queries
 --------------------------------------------------------------*/
@@ -3212,6 +3217,14 @@ p > object:only-child {
 }
 
 @media screen and (min-width: 30em) {
+
+	#phonecall{
+		display: none;
+	}
+
+	#contact-button{
+		display: inherit;
+	}
 
 	/* Typography */
 
