@@ -1610,6 +1610,7 @@ body.has-header-video .site-title a {
 	font-size: 13px;
 	font-size: 0.8125rem;
 	margin-bottom: 0;
+	margin-left: 0;
 }
 
 body.has-header-image .site-description,

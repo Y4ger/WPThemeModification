@@ -26,7 +26,11 @@ function toggle_selected (){
       //get just the path
       var split = window.location.href.split('/');
       var check = split.pop() || split.pop();
-      //if there are already multiple categories find/select them
+			if ($.isNumeric(check)){
+				check = split.pop();
+				check = split.pop();
+			}
+			//if there are already multiple categories find/select them
       if (~check.indexOf("+")){
         split = check.split('+');
         split.forEach(element => {
@@ -45,6 +49,12 @@ function category_pathfinder(){
     $('.category-selector').click(function(){
       var split = window.location.href.split('/');
       var check = split.pop() || split.pop();
+			if ($.isNumeric(check)){
+				var pageNumberCheck = 1;
+				check = split.pop();
+				check = split.pop();
+				console.log(check);
+			}
       var add = $(this).text().replace(/\s+/g, '-').toLowerCase();
       //if current and only is clicked just reload page
       if (check == add ){
@@ -61,8 +71,13 @@ function category_pathfinder(){
         }
       }//append the new category onto the URL
       else {
-        var current = window.location.href.slice(0,-1);
-        url = current.concat('+', add);
+				if (pageNumberCheck){
+					var current = window.location.href.slice(0, -8);
+				}
+				else{
+        	var current = window.location.href.slice(0,-1);
+				}
+				url = current.concat('+', add);
         document.getElementById(add).classList.toggle('selected');
       }
       //load new url
