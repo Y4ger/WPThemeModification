@@ -2515,6 +2515,10 @@ body:not(.twentyseventeen-front-page) .entry-header {
 	padding-bottom: 3em;
 }
 
+.category-selector:hover{
+	background-color: #ddd;
+}
+
 h2.widget-title {
 	color: #222;
 	font-size: 13px;
@@ -3227,6 +3231,12 @@ p > object:only-child {
 		display: inherit;
 	}
 
+	.sticky-sidebar{
+		position: -webkit-sticky; /* Safari */
+		position: sticky;
+		top: 175px;
+	}
+
 	/* Typography */
 
 	body,
@@ -3380,7 +3390,7 @@ p > object:only-child {
 	.sticky-sidebar{
 		position: -webkit-sticky; /* Safari */
 	  position: sticky;
-   	top: 125px;
+   	top: 175px;
 	}
 
 	.wrap {
@@ -4111,7 +4121,12 @@ p > object:only-child {
 @media screen and ( min-width: 67em ) {
 
 	/* Layout */
-
+	.sticky-sidebar{
+		position: -webkit-sticky; /* Safari */
+	  position: sticky;
+   	top: 125px;
+	}
+	
 	/* Navigation */
 	.navigation-top .wrap {
 		padding: 0.75em 2em;
