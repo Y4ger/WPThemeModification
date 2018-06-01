@@ -42,11 +42,14 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 				}
 
 			 	$thiscat = get_query_var('cat');
-				$mycats = get_categories();
+				$mycats = get_categories(array(
+					'exclude' => '20'
+				));
 
 				foreach ($mycats as $cat) {
 					if (! is_subcategory($cat)){
 						$name = seoUrl($cat->name);
+						console.log($cat->ID);
 						echo "<li class='category-selector' id=$name>$cat->name</li>";
 					}
 				}
