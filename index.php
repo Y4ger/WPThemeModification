@@ -61,6 +61,9 @@ get_header(); ?>
 							the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1></header>' );
 						}
 					the_content();
+					$host = gethostname();
+					echo "<a href='http://localhost:8888/" . the_title('','',false) . "'><button id='contact-button'>View Project</button></a>";
+
 				 	if (($wp_query->current_post +1) != ($wp_query->post_count)) {
   					echo '<hr/>';
 					}
