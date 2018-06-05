@@ -493,6 +493,10 @@ p {
 	padding: 0;
 }
 
+form > p {
+	margin: 0px;
+}
+
 dfn,
 cite,
 em,
