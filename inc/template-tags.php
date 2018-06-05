@@ -81,7 +81,7 @@ function twentyseventeen_entry_footer() {
 
 						// Make sure there's more than one category before displaying.
 						if ( $categories_list && twentyseventeen_categorized_blog() ) {
-							echo '<span class="cat-links">' . '<h3><strong>Features: </strong>' . '<span class="screen-reader-text">' . __( 'Categories', 'twentyseventeen' ) . '</span>' . $categories_list . '</h3>';
+							echo '<span class="cat-links">' . '<h3 class=cat-hovers><strong>Features: </strong>' . '<span class="screen-reader-text">' . __( 'Categories', 'twentyseventeen' ) . '</span>' . $categories_list . '</h3>';
 						}
 
 						if ( $tags_list && ! is_wp_error( $tags_list ) ) {

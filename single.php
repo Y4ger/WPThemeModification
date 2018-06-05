@@ -22,6 +22,8 @@ get_header(); ?>
 
 				get_template_part( 'template-parts/post/content', get_post_format() );
 
+				echo '<hr />';
+
 				echo '<h1>Contact Us</h1>';
 				dynamic_sidebar('smartslider_area_1');
 
@@ -38,5 +40,4 @@ get_header(); ?>
 	</div><!-- #primary -->
 	<?php //get_sidebar(); ?>
 </div><!-- .wrap -->
-
 <?php get_footer();

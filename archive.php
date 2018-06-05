@@ -36,7 +36,7 @@ get_header(); ?>
 				$separate_meta = __( ', ', 'twentyseventeen' );
 				$categories_list = get_the_category_list( $separate_meta );
 				//print all applied categories
-				echo '<span class="cat-links">' . '<h3><strong>Features: </strong>' . '<span class="screen-reader-text">' . __( 'Categories', 'twentyseventeen' ) . '</span>' . $categories_list . '</h3>';
+				echo '<span class="cat-links">' . '<h3 class=cat-hovers><strong>Features: </strong>' . '<span class="screen-reader-text">' . __( 'Categories', 'twentyseventeen' ) . '</span>' . $categories_list . '</h3>';
 
 				$host = gethostname();
 				echo "<a href='http://localhost:8888/" . the_title('','',false) . "'><button id='nav-button'>View Project</button></a>";
