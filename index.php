@@ -62,7 +62,7 @@ get_header(); ?>
 						}
 					the_content();
 					$host = gethostname();
-					echo "<a href='http://localhost:8888/" . the_title('','',false) . "'><button id='contact-button'>View Project</button></a>";
+					echo "<a href='http://localhost:8888/" . the_title('','',false) . "'><button id='nav-button'>View Project</button></a>";
 
 				 	if (($wp_query->current_post +1) != ($wp_query->post_count)) {
   					echo '<hr/>';

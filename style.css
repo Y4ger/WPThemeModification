@@ -432,7 +432,7 @@ h5,
 h6 {
 	clear: both;
 	line-height: 1.4;
-	margin: 0 0 0.75em;
+	margin: 0.75em 0;
 }
 
 h1:first-child,
@@ -2097,10 +2097,10 @@ body:not(.twentyseventeen-front-page) .entry-header {
 
 /* More tag */
 
-.entry-content .more-link:before {
-	content: "";
-	display: block;
-	margin-top: 1.5em;
+.more-link {
+	/* content: ""; */
+	display: none;
+	/* margin-top: 1.5em; */
 }
 
 /* Single Post */
@@ -2670,6 +2670,18 @@ h2.widget-title {
 	width:100%;
 	display: none;
 	background-color: #4888e9;
+}
+
+#nav-button {
+	width:50%;
+	margin-left: 25%;
+	margin-right: auto;
+	background-color: #4888e9;
+	margin-bottom: 1em;
+}
+
+#nav-button:hover {
+	background-color: #4674b9;
 }
 
 #contact-button:hover {

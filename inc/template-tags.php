@@ -73,7 +73,7 @@ function twentyseventeen_entry_footer() {
 	// We don't want to output .entry-footer if it will be empty, so make sure its not.
 	if ( ( ( twentyseventeen_categorized_blog() && $categories_list ) || $tags_list ) || get_edit_post_link() ) {
 
-		echo '<footer class="entry-footer">';
+		// echo '<footer class="entry-footer">';
 
 			if ( 'post' === get_post_type() ) {
 				if ( ( $categories_list && twentyseventeen_categorized_blog() ) || $tags_list ) {
@@ -81,7 +81,7 @@ function twentyseventeen_entry_footer() {
 
 						// Make sure there's more than one category before displaying.
 						if ( $categories_list && twentyseventeen_categorized_blog() ) {
-							echo '<span class="cat-links">' . twentyseventeen_get_svg( array( 'icon' => 'folder-open' ) ) . '<span class="screen-reader-text">' . __( 'Categories', 'twentyseventeen' ) . '</span>' . $categories_list . '</span>';
+							echo '<span class="cat-links">' . '<h3><strong>Features: </strong>' . '<span class="screen-reader-text">' . __( 'Categories', 'twentyseventeen' ) . '</span>' . $categories_list . '</h3>';
 						}
 
 						if ( $tags_list && ! is_wp_error( $tags_list ) ) {
@@ -94,7 +94,7 @@ function twentyseventeen_entry_footer() {
 
 			twentyseventeen_edit_link();
 
-		echo '</footer> <!-- .entry-footer -->';
+		// echo '</footer> <!-- .entry-footer -->';
 	}
 }
 endif;

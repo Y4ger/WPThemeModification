@@ -31,9 +31,16 @@ get_header(); ?>
 				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 				 */
 
-
 				get_template_part( 'template-parts/post/content', 'image' );
-				// get_template_part( 'template-parts/post/content', 'excerpt' );
+
+				$separate_meta = __( ', ', 'twentyseventeen' );
+				$categories_list = get_the_category_list( $separate_meta );
+				//print all applied categories
+				echo '<span class="cat-links">' . '<h3><strong>Features: </strong>' . '<span class="screen-reader-text">' . __( 'Categories', 'twentyseventeen' ) . '</span>' . $categories_list . '</h3>';
+
+				$host = gethostname();
+				echo "<a href='http://localhost:8888/" . the_title('','',false) . "'><button id='nav-button'>View Project</button></a>";
+				echo '<hr />';
 
 			endwhile;
 
