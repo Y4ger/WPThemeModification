@@ -74,7 +74,7 @@ function twentyseventeen_entry_footer() {
 	if ( ( ( twentyseventeen_categorized_blog() && $categories_list ) || $tags_list ) || get_edit_post_link() ) {
 
 		// echo '<footer class="entry-footer">';
-
+		echo '<hr />';
 			if ( 'post' === get_post_type() ) {
 				if ( ( $categories_list && twentyseventeen_categorized_blog() ) || $tags_list ) {
 					echo '<span class="cat-tags-links">';

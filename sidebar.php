@@ -115,6 +115,5 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 		</div>
 	</section> -->
 <a href="http://localhost:8888/contact/">	<button class="widget-title" id="contact-button">Contact Us</button></a>
-	<a href="tel:+1-317-691-8663"><button class="widget-title" id="phonecall">Call Now</button></a>
 	<?php// dynamic_sidebar('smartslider_area_1'); ?>
 </aside><!-- #secondary -->

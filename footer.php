@@ -15,6 +15,7 @@
 ?>
 
 		</div><!-- #content -->
+		<a href="tel:+1-317-691-8663"><button class="widget-title" id="phonecall"><?php echo twentyseventeen_get_svg( array( 'icon' => 'phone' ) ); ?></button></a>
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="wrap">

@@ -3243,8 +3243,16 @@ p > object:only-child {
 }
 
 #phonecall{
-	display: visible;
-	width: 100%;
+	/* width: 100%; */
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	border-radius: 100%;
+	z-index: 1;
+}
+
+#phonecall > svg {
+	font-size: 50px;
 }
 
 /*--------------------------------------------------------------
